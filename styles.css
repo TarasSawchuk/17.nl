@@ -1,0 +1,142 @@
+/* Browser styles reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+}
+
+body {
+    width: 100vw;
+}
+
+/* Wrapper styling */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-left: 28%;
+    margin-right: 28%;
+    padding: 3vw;
+    border-left: rgb(221, 221, 221) 2px solid;
+}
+
+.wrapper h2, p, img {
+    margin-top: 3vh; 
+}
+
+/* Header styling */
+
+.header-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-images {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-title {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.header-title h1 {
+    text-transform: uppercase;
+    color: white;
+    background-color:rgb(31,36,69);
+    letter-spacing: 2px;
+    border-bottom: white 5px solid;
+}
+
+.header-anchor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:rgb(31,36,69);
+}
+
+/* Header styling end, 
+General container styling*/
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(31,36,69);
+}
+
+.content .wrapper h2 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.content .wrapper p {
+    line-height: 25px;
+}
+
+/* footer styling */
+
+footer {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(31,36,69);
+    justify-content: space-around;
+}
+
+footer .span-block {
+    width: 16vw;
+    height: 4.5vh;
+    padding: 0.8vh;
+    background-color: #fff;
+    text-transform: uppercase;
+    color: rgb(31,36,69);
+    font-weight: bold;
+}
+
+footer .social-block ul li {
+    display: inline-block;
+    height: 20vh;
+}
+
+footer .social-block p {
+    font-size: 12px;
+    color: white;
+    text-align-last: center;
+}
+
+/* Hover effects */
+
+.header-anchor:hover a, footer .social-block ul li:hover {
+    transform: scale(1.2);
+}
+
+/* Scroll off */
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+
+/* Breakpoint */
+
+@media screen and (max-width:1024px) {
+    footer .span-block {
+        height: 10vh;
+    }
+}
